@@ -5,6 +5,7 @@ import Contact from './Contact';
 import Home from './Home';
 import Donate from './Donate';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route exact path ="/contact" element = {<Contact/>} />
       <Route exact path ="/donate" element = {<Donate/>} />
     </Routes>
+    <Footer/>
    
     </>
   );
