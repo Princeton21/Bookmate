@@ -1,0 +1,19 @@
+.nav-list{
+    background-color: red;
+    text-align: center;
+}
+.nav-list ul{
+    display: inline-flex;
+    list-style-type: none;
+    color:white;
+    
+}
+.nav-list ul li {
+    width: 5rem;
+    margin:1rem;
+    padding:1rem;
+}
+.nav-list ul li a{
+    text-decoration: none;
+    color: white;
+}
