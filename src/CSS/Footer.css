@@ -24,11 +24,18 @@ footer {
     animation: rotatefront 1s linear infinite alternate-reverse;
     color: #fff;
   }
-  
+  .col-6 ul{
+    display: inline-flex;
+  }
+  .col-6 ul a{
+    margin:1rem;
+  }
   footer h2 {
     color: #fff;
   }
-  
+  /* .col-6{
+    display:inline-flex;
+  } */
   footer li {
     list-style: none;
     font-size: 1.5rem;
