@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Menu from './Menu';
 import "./CSS/Home.css";
 const Home = () => {
   return (
-    <div className="home"></div>
+    <>
+    <Menu/>
+    <div className="home">Home page</div>
+    </>
   )
 }
 
