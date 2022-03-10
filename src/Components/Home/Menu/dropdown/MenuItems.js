@@ -15,8 +15,13 @@ export const MenuItems = [
         cName: 'dropdown-link'
     },
     {
-        title: 'Crime,Suspense&Thriller',
-        path:  '/crmsusthrlr',
+        title: 'Suspense',
+        path:  '/suspense',
+        cName: 'dropdown-link'
+    },
+    {
+        title: 'Thriller',
+        path:  '/thriller',
         cName: 'dropdown-link'
     },
     {
