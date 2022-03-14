@@ -6,6 +6,8 @@ import Home from './Home';
 import Donate from './Donate';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
