@@ -1,12 +1,13 @@
-import React from 'react';
-import Menu from './Components/Home/Menu/Menu';
+import React from 'react'
 import "./CSS/Home.css";
+import CarouselContainer from "./Components/Home/Menu/CarouselContainer"
 const Home = () => {
   return (
-    <>
-    <Menu/>
-    <div className="home">Home page</div>
-    </>
+    
+    <div className="home">
+    <CarouselContainer/>
+      </div>
+    
   )
 }
 
