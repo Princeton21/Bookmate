@@ -1,17 +1,36 @@
 import React from 'react';
 import './CSS/Navbar.css';
+import { Link } from 'react-router-dom';
+import {FaBars} from 'react-icons/fa';
 
 const Navbar = () => {
   return (
       <>
-        <div className="nav-list">
-          <ul>
-            <li><a href="/" className="home">Home</a></li>
-            <li><a href="/buy" className="buy">Buy</a></li>
-            <li><a href="donate" className="donate">Donate</a></li>
-            <li><a href="contact" className="contact">Contact</a></li>
+        <div className='header'>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <Link className="navbar-brand" to="/">  BOOKMATE</Link>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon" ><FaBars size={25} color='white'/></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item active">
+              <Link className="nav-link" to="/">user<span className="sr-only"></span></Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/">orders</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/">Logout</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/">cart</Link>
+            </li>
+            
           </ul>
         </div>
+      </nav>
+    </div>
       </>
       
   )
