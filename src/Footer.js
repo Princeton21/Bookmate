@@ -1,115 +1,59 @@
-import React from "react";
-import "./CSS/Footer.css";
-const Footer = () => {
-    return (<>
+import React from 'react'
+import { FaFacebook , FaInstagram , FaGithub , FaLinkedin , FaTwitterSquare} from "react-icons/fa";
+// import './footercss.css'
+import './CSS/Footer.css'
+
+
+const handleURL = (url) => {
+    return () => window.open(url , "_blank")
+}
+
+const Contact = () => {
+  return  (
+      
+      
+    <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+          
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">shipping</a></li>
+            <li><a href="#">returns</a></li>
+            <li><a href="#">order status</a></li>
+            <li><a href="#">payment options</a></li>
+          </ul>
+        </div>
         
-        <footer>
-            <div className="container">
-                <div className="row">
-                    <div className="col-12 col-lg-10 mx-auto">
-                        <div className="row">
-                            <div className="col-6 col-lg-3">
-                                <h2>Company</h2>
-                                <ul>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+          {/* <FaFacebook size='40px' style={ {padding : '1%'}}
+                  onClick={handleURL('https://www.facebook.com')}/> */}
+            <FaGithub size='40px' style={ {padding : '1%'}}
+                  onClick={handleURL('https://www.github.com')}/>
+            <FaInstagram size='40px' style={ {padding : '1%'}}
+                  onClick={handleURL('https://www.instagram.com')}/>
+            <FaLinkedin size='40px' style={ {padding : '1%'}}
+                  onClick={handleURL('https://www.linkedin.com')}/>
+          </div>
+        </div>
+      </div>
+    </div>
+ </footer>
 
-                                    <li>
-                                        <a href="#">About</a> 
-                                    </li>
-                                    <li>
-                                        <a href="#">About</a> 
-                                    </li>
-                                    <li>
-                                        <a href="#">About</a> 
-                                    </li>
-                                    <li>
-                                        <a href="#">About</a> 
-                                    </li>    
-
-                                </ul>
-                            </div>
-
-                            <div className="col-6 col-lg-3">
-                                <h2>Support</h2>
-                                <ul>
-                                    
-                                    <li>
-                                        <a href="#">About</a> 
-                                    </li>
-                                    <li>
-                                        <a href="#">About</a> 
-                                    </li>
-                                    <li>
-                                        <a href="#">About</a> 
-                                    </li>
-                                    <li>
-                                        <a href="#">About</a> 
-                                    </li>    
-
-                                </ul>
-                            </div>
-
-                            <div className="col-6 col-lg-3">
-                                <h2>Services</h2>
-                                <ul>
-                                    
-                                    <li>
-                                        <a href="#">About</a> 
-                                    </li>
-                                    <li>
-                                        <a href="#">About</a> 
-                                    </li>
-                                    <li>
-                                        <a href="#">About</a> 
-                                    </li>
-                                    <li>
-                                        <a href="#">About</a> 
-                                    </li>    
-
-                                </ul>
-                            </div>
-
-                            <div className="col-6 col-lg-3">
-                                <h2>Follow Us</h2>
-                                <div className="row">
-                                    
-                                    <div className="col-3 mx-auto">
-                                        <a href="https://www.instagram.com">
-                                            <i className="fab fa-instagram fontawesome-style"></i>    
-                                        </a>
-                                    </div>
-
-                                    <div className="col-3 mx-auto">
-                                        <a href="https://www.facebook.com">
-                                            <i className="fab fa-facebook fontawesome-style"></i>    
-                                        </a>
-                                    </div>
-
-                                    <div className="col-3 mx-auto">
-                                        <a href="https://www.twitter.com">
-                                            <i className="fab fa-twitter fontawesome-style"></i>    
-                                        </a>
-                                    </div>
-
-                                    <div className="col-3 mx-auto">
-                                        <a href="https://www.linkedin.com">
-                                            <i className="fab fa-linkedin fontawesome-style"></i>    
-                                        </a>
-                                    </div>
-    
-                                </div>
-                            </div>
-
-                           
-                        </div>
-                        <hr/>
-                            <div className="mt-5 ">
-                                <p className="main-hero-para text-center w-100">All rights reserved</p>
-                            </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </>
+  
     );
-};
-export default Footer;
+}
+
+export default Contact
