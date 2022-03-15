@@ -1,7 +1,6 @@
 
 .menu-bar {
     box-sizing: border-box;
-    height: 8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,6 +10,7 @@
   .main-menu {
     font-size: 1.2rem;
     display: flex;
+    height: 10rem;
     /* background-color: blue; */
     list-style: none;
     width: 100%;
@@ -46,6 +46,7 @@
   .menu-links:hover {
     background-color: transparent;
     border-radius: 4px;
+    color: black;
     transform: scale(1.05);
     transition: all 0.1s ease-in;
   }
