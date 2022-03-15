@@ -1,7 +1,7 @@
 
 .menu-bar {
     box-sizing: border-box;
-    height: 3rem;
+    height: 8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
