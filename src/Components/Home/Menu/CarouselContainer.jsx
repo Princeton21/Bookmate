@@ -8,7 +8,7 @@ import image3 from './assets/images/14.jpg';
 const CarouselContainer = () => {
   return (
     <Carousel fade={true} pause={false}>
-      <Carousel.Item interval={2000}>
+      <Carousel.Item interval={4000}>
         <img
           className="d-block w-100"
           src={image1}

@@ -25,7 +25,6 @@ function Menu() {
       setDropdown(false);
     }
   };
-
   return (
     <>
       <nav className='menu-bar'>
