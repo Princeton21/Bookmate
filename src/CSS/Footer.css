@@ -87,8 +87,9 @@ ul{
 	transition: all 0.5s ease;
 }
 .footer-col .social-links :hover{
-	color: #24262b;
-	background-color: #ffffff;
+	/* color: #24262b;
+	background-color: #ffffff; */
+	transform: rotate(360);
 }
 
 /*responsive*/

@@ -1,4 +1,4 @@
-
+/* 
 .menu-bar {
     box-sizing: border-box;
     display: flex;
@@ -11,7 +11,7 @@
     font-size: 1.2rem;
     display: flex;
     height: 10rem;
-    /* background-color: blue; */
+  background-color: blue; 
     list-style: none;
     width: 100%;
     position: relative;
@@ -49,4 +49,4 @@
     color: black;
     transform: scale(1.05);
     transition: all 0.1s ease-in;
-  }
+  } */
