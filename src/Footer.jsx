@@ -2,6 +2,7 @@ import React from 'react'
 import { FaFacebook , FaInstagram , FaGithub , FaLinkedin , FaTwitterSquare} from "react-icons/fa";
 // import './footercss.css'
 import './CSS/Footer.css'
+import { Link } from 'react-router-dom';
 
 
 const handleURL = (url) => {
@@ -18,28 +19,26 @@ const Contact = () => {
         <div class="footer-col">
           <h4>company</h4>
           <ul>
-            <li><a href="#">about us</a></li>
-            <li><a href="#">our services</a></li>
-            <li><a href="#">privacy policy</a></li>
+            <li><Link to="about">about us</Link></li>
+            <li><Link to="our services">our services</Link></li>
+            <li><Link to="privacy policy">privacy policy</Link></li>
           
           </ul>
         </div>
         <div class="footer-col">
           <h4>get help</h4>
           <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">shipping</a></li>
-            <li><a href="#">returns</a></li>
-            <li><a href="#">order status</a></li>
-            <li><a href="#">payment options</a></li>
+            <li><Link to="FAQ">FAQ</Link></li>
+            <li><Link to="shipping">shipping</Link></li>
+            <li><Link to="returns">returns</Link></li>
+            <li><Link to="order status">order status</Link></li>
+            <li><Link to="payment options">payment options</Link></li>
           </ul>
         </div>
         
         <div class="footer-col">
-          <h4>follow us</h4>
+          <div className="Follow"><h4>follow us</h4></div>
           <div class="social-links">
-          {/* <FaFacebook size='40px' style={ {padding : '1%'}}
-                  onClick={handleURL('https://www.facebook.com')}/> */}
             <FaGithub size='40px' style={ {padding : '1%'}}
                   onClick={handleURL('https://www.github.com')}/>
             <FaInstagram size='40px' style={ {padding : '1%'}}

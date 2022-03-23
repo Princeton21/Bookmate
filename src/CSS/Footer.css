@@ -13,7 +13,9 @@ body{
 	
 	max-width: 1170px;
 	margin:auto;
-    background-color: #751a38d3;
+    background-color: #751a38d3; 
+	padding-top: 10px;
+	
 /* at bottom */
     bottom: 0; 
     width : 100%; 
@@ -32,8 +34,15 @@ ul{
     padding: 30px 0;
 
 	position: absolute;
-    bottom: 0; 
-    width : 100%; 
+    /* bottom: 0; 
+    width : 100%;  */
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; 
 }
 .footer-col{
    width: 25%;
@@ -41,11 +50,16 @@ ul{
 }
 .footer-col h4{
 	font-size: 20px;
-	color: #ffffff;
+	color: #ffffff; 
+	padding-left: 30px;
 	text-transform: capitalize;
 	margin-bottom: 30px;
 	font-weight: 500;
 	position: relative;
+}
+.footer-col .Follow h4
+{
+	padding-left: 0px;
 }
  /* .footer-col h4::before{
 	content: '';
@@ -63,10 +77,9 @@ ul{
 .footer-col ul li a{
 	font-size: 16px;
 	text-transform: capitalize;
-	color: #ffffff;
+	color: #ffffff; 
 	text-decoration: none;
 	font-weight: 300;
-	color: #bbbbbb;
 	display: block;
 	transition: all 0.3s ease;
 }
@@ -78,7 +91,6 @@ ul{
 	display: inline-block;
 	height: 40px;
 	width: 40px;
-	background-color: rgba(255,255,255,0.2);
 	margin:0 10px 10px 0;
 	text-align: center;
 	line-height: 40px;
@@ -87,9 +99,8 @@ ul{
 	transition: all 0.5s ease;
 }
 .footer-col .social-links :hover{
-	/* color: #24262b;
-	background-color: #ffffff; */
-	transform: rotate(360);
+	color: #24262b;
+	background-color: #ffffff;
 }
 
 /*responsive*/
