@@ -17,7 +17,7 @@ function App() {
       <Route exact path ="/contact" element = {<Contact/>} />
       <Route exact path ="/donate" element = {<Donate/>} />
     </Routes>
-     <Footer/> 
+     {/* <Footer/>  */}
    
     </>
   );
