@@ -8,7 +8,7 @@
     background-color: #E66B20;
     position: relative;
     margin-top: 51px;
-    max-width: 1300px;
+    width: 100%;
     padding: 0px 30px;
     height: 70px;
     line-height: 70px;
@@ -44,7 +44,7 @@
     display: none;
   }
   .menu-links .drop-menu{
-    position: absolute;
+    position: relative;
     background: #242526;
     width: 180px;
     line-height: 45px;
@@ -55,7 +55,7 @@
   }
   .menu-links li:hover .drop-menu,
   .menu-links li:hover .mega-box{
-    transition: all 0.3s ease;
+    transition: all 1.3s ease;
     top: 70px;
     opacity: 1;
     visibility: visible;
