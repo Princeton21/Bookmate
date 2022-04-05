@@ -1,6 +1,6 @@
 import './App.css';
 import {Route , Routes} from  'react-router-dom';
-import Buy from './Components/Buy/Buy';
+import Sell from './Components/Sell/Sell';
 import Contact from './Contact';
 import Home from './Home';
 import Donate from './Donate';
@@ -13,11 +13,11 @@ function App() {
     <Navbar/>
     <Routes>
       <Route exact path ="/" element = {<Home/>} />
-      <Route exact path ="/buy" element = {<Buy/>} />
+      <Route exact path ="/sell" element = {<Sell/>} />
       <Route exact path ="/contact" element = {<Contact/>} />
       <Route exact path ="/donate" element = {<Donate/>} />
     </Routes>
-     <Footer/> 
+     {/* <Footer/>  */}
    
     </>
   );
