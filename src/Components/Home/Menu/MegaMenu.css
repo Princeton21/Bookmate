@@ -53,8 +53,8 @@
     visibility: hidden;
     box-shadow: 0 6px 10px rgba(0,0,0,0.15);
   }
-  .menu-links li:hover .drop-menu,
-  .menu-links li:hover .mega-box{
+  .menu-links li .drop-menu,
+  .menu-links li .mega-box{
     transition: all 1.3s ease;
     top: 70px;
     opacity: 1;
@@ -67,12 +67,16 @@
     font-weight: 400;
     border-radius: 0px;
   }
+  .mega-bx-inactive{
+    display: none;
+  }
   .mega-box{
     position: absolute;
     left: 0;
     width: 100%;
     padding: 0 30px;
     top: 85px;
+    z-index: 2;
     opacity: 0;
     visibility: hidden;
   }
