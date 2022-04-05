@@ -1,58 +1,51 @@
 import React from 'react'
-import { FaFacebook , FaInstagram , FaGithub , FaLinkedin , FaTwitterSquare} from "react-icons/fa";
-// import './footercss.css'
-import './CSS/Footer.css'
 import { Link } from 'react-router-dom';
-
-
-const handleURL = (url) => {
-    return () => window.open(url , "_blank")
-}
-
-const Contact = () => {
+import './CSS/Footer.css'
+const Footer = () => {
   return  (
-      
-      
-    <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="footer-col">
-          <h4>company</h4>
-          <ul>
-            <li><Link to="about">about us</Link></li>
-            <li><Link to="our services">our services</Link></li>
-            <li><Link to="privacy policy">privacy policy</Link></li>
-          
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>get help</h4>
-          <ul>
-            <li><Link to="FAQ">FAQ</Link></li>
-            <li><Link to="shipping">shipping</Link></li>
-            <li><Link to="returns">returns</Link></li>
-            <li><Link to="order status">order status</Link></li>
-            <li><Link to="payment options">payment options</Link></li>
-          </ul>
-        </div>
-        
-        <div class="footer-col">
-          <div className="Follow"><h4>follow us</h4></div>
-          <div class="social-links">
-            <FaGithub size='40px' style={ {padding : '1%'}}
-                  onClick={handleURL('https://www.github.com')}/>
-            <FaInstagram size='40px' style={ {padding : '1%'}}
-                  onClick={handleURL('https://www.instagram.com')}/>
-            <FaLinkedin size='40px' style={ {padding : '1%'}}
-                  onClick={handleURL('https://www.linkedin.com')}/>
-          </div>
-        </div>
-      </div>
-    </div>
- </footer>
+    <footer className="footer">
+  	 <div className="container">
+  	 	<div className="row">
+  	 		<div className="footer-col">
+  	 			<h4>Abous us</h4>
+  	 			<p>
+             Bookmate is a platform where we are aimed to provide books to the needy.
+             You can also sell and buy the second hand books.
+           </p>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Quick Links</h4>
+  	 			<ul>
+            <li><Link to="#">Home</Link></li>
+  	 				<li><Link to="#">Sell</Link></li>
+  	 				<li><Link to="#">Login</Link></li>
+  	 				<li><Link to="#">Carts</Link></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>My Account</h4>
+  	 			<ul>
+  	 				<li><Link to="#">Shopping Cart</Link></li>
+  	 				<li><Link to="#">Order History</Link></li>
+  	 				<li><Link to="#">Wish List</Link></li>
+  	 				<li><Link to="#">Settings</Link></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<Link to="#"><i class="fab fa-facebook-f"></i></Link>
+  	 				<Link to="#"><i class="fab fa-twitter"></i></Link>
+  	 				<Link to="#"><i class="fab fa-instagram"></i></Link>
+  	 				<Link to="#"><i class="fab fa-linkedin-in"></i></Link>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
 
   
     );
 }
 
-export default Contact
+export default Footer
