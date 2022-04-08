@@ -1,9 +1,10 @@
+
 export const firebaseConfig = {
-    apiKey: "REACT_APP_FIREBASE_API_KEY",
-    authDomain: "bookmate-0o.firebaseapp.com",
-    projectId: "bookmate-0o",
-    storageBucket: "bookmate-0o.appspot.com",
-    messagingSenderId: "1071385411930",
-    appId: "1:1071385411930:web:88b68199b119e851213363",
-    measurementId: "G-MX7HLW4L5Y"
-  };
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY1,
+  authDomain: process.env.REACT_APP_FIREBASE_DOMAIN1,
+  projectId: "bookmate-0o",
+  storageBucket: process.env.REACT_APP_FIREBASE_BUCKET1,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_SENDER_ID1,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID1,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID1
+};
