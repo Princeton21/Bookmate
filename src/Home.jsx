@@ -13,6 +13,9 @@ const Home = () => {
       <div className="menu-slider">
         <Slider/>
       </div>
+      <div className="home-content">
+        <h1>Welcome to our Website</h1>
+      </div>
       <div className="home-cards">
         <Cards/>
       </div>
