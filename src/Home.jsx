@@ -2,6 +2,7 @@ import React from 'react'
 import "./CSS/Home.css";
 import MegaMenu from './Components/Home/Menu/MegaMenu';
 import Cards from './Components/Cards/Cards';
+import Slider from './Components/Slider/Slider';
 const Home = () => {
   return (
     <>
@@ -10,7 +11,7 @@ const Home = () => {
         <MegaMenu/>
       </div>
       <div className="menu-slider">
-        
+        <Slider/>
       </div>
       <div className="home-cards">
         <Cards/>
