@@ -1,12 +1,11 @@
 import React,{useState} from 'react'
 import { Link } from 'react-router-dom'
 import './MegaMenu.css'
-import img from './assets/images/12.jpg'
+import img from '../assets/images/12.jpg'
 const MegaMenu = () => {
   const [dropdown, setDropdown] = useState(false);
 
   const handleClick = () => setDropdown(!dropdown);
-
 
   return (
   <>
