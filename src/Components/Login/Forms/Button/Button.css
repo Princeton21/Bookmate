@@ -1,0 +1,16 @@
+.btn{
+    display: block;
+    width: 100%;
+    font-size: 1.8rem;
+    line-height: 1;
+    color:white;
+    background: black;
+    text-transform: uppercase;
+    outline: none;
+    padding:1rem 0;
+    font-weight: 300;
+    margin: 0 auto;
+    border: 0;
+    cursor: pointer;
+    
+}
