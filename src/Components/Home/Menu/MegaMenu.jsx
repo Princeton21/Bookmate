@@ -40,12 +40,12 @@ const MegaMenu = () => {
                 </ul>
               </div>
               <div className="row">
-                <h2>Subjects</h2>
+                <h2>Department</h2>
                 <ul className="mega-links">
-                  <li><Link to="/mathematics">Mathematics</Link></li>
-                  <li><Link to="/datastructures">Data Structures</Link></li>
-                  <li><Link to="/software_eng">Software Engg</Link></li>
-                  <li><Link to="/digital_elec">Digital Electronics</Link></li>
+                  <li><Link to="/ENTC">ENTC</Link></li>
+                  <li><Link to="/Computer">Computer</Link></li>
+                  <li><Link to="/Mechanical">Mechanical</Link></li>
+                  <li><Link to="/Civil">Civil</Link></li>
                 </ul>
               </div>
             </div>
