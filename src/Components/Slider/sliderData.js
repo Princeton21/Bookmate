@@ -21,12 +21,12 @@ export default [
   {
     title: "Fourth Slide",
     description: "This is the Fourth slider Image of our carousel",
-    urls: "https://miro.medium.com/max/10944/1*S81O15rjKfG-BFdnNC6-GQ.jpeg",
+    urls: "https://wallup.net/wp-content/uploads/2017/11/23/503458-paper-literature-books.jpg",
   },
   {
     title: "Fifth Slide",
     description: "This is the Fifth slider Image of our carousel",
-    urls: "https://assets.entrepreneur.com/content/3x2/2000/20191219170611-GettyImages-1152794789.jpeg",
+    urls: "https://wallup.net/wp-content/uploads/2019/09/24336-manipulation-landscapes-islands-books-nature-trees-forest-jungle-birds-waterfall-ocean-sea-water-artistiv-tropical-surreal-1.jpg",
   },
   {
     title: "Sixth Slide",
@@ -36,6 +36,6 @@ export default [
   {
     title: "Seventh Slide",
     description: "This is the Seventh slider Image of our carousel",
-    urls: "https://jooinn.com/images/opened-book-4.jpg",
+    urls: "https://images6.alphacoders.com/872/thumb-1920-872784.jpg",
   },
 ];

@@ -13,6 +13,13 @@
   /* .menu-slider {
     z-index: 10;
   } */
+.home-container{
+  position: relative;
+}
+.home-menu .menu-slider .home-content .home-cards { 
+  position: absolute;
+}
+
   .home-content{
     text-align: center;
   }
