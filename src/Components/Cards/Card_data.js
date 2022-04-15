@@ -8,4 +8,6 @@ export const cardInfo = [
     {image:img2,title:"Book number 2",text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, sapiente?"},
     {image:img3,title:"Book number 3",text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, sapiente?"},
     {image:img1,title:"Book number 4",text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, sapiente?"},
+    {image:img3,title:"Book number 3",text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, sapiente?"},
+    {image:img1,title:"Book number 4",text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, sapiente?"},
 ];
