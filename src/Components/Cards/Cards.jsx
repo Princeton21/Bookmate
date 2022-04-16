@@ -23,24 +23,31 @@
 
 // export default Cards
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './Cards.css'
 import { cardInfo } from './Card_data';
 const Cards = () => {
     const renderCard = (card, index) => {
         return (
           <>
-          <div className="container">
-            <main className="grid">
-                <article>
-                    <img src={card.image} alt=""/>
-                    <div className="text">
-                        <h3>{card.title}</h3>
-                        <p>{card.text}</p>
-                        <button>Button 1</button>
-                    </div>
-              </article>
-            </main>
-          </div>
+            <div className='card-container'>
+              <div className="card-image">
+              <img src={card.image} alt="This is  book image"/>
+              </div>
+              <div className="card-body">
+                <div className="card-title">
+                <h3>{card.title}</h3>
+                </div>
+                <div className="card-text">
+                    <p>{card.text}</p>
+                </div>
+              </div>
+              <div className="card-btn">
+                <button>
+                  <Link to='/' id='card-btn-link'>View more</Link>
+                </button>
+                </div>
+            </div>
           </>
         );
       };
