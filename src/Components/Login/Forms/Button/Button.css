@@ -1,16 +1,26 @@
 .btn{
     display: block;
-    width: 100%;
-    font-size: 1.8rem;
+    width: 40%;
+    font-size: 23;
     line-height: 1;
-    color:white;
-    background: black;
+    
+    background: rgb(240, 233, 229);
     text-transform: uppercase;
     outline: none;
     padding:1rem 0;
-    font-weight: 300;
+    font-weight: 500;
     margin: 0 auto;
-    border: 0;
+    border: 1px  black;
     cursor: pointer;
+    /* color: white; */
     
+    border-radius: 35px;
+    
+    
+    
+    
+}
+.btn:hover{
+    opacity: 0.8;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
