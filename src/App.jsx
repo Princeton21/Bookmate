@@ -2,7 +2,6 @@ import './App.css';
 import React, {Component} from 'react';
 import {Route , Routes} from  'react-router-dom';
 import Sell from './Components/Sell/Sell';
-import Contact from './Contact';
 import Home from './Home';
 import Navbar from './Navbar';
 import Footer from './Footer';
@@ -11,6 +10,7 @@ import Trending from './Components/Card_pages/Trending';
 import New_releases from './Components/Card_pages/New_releases';
 import Login from './Components/Login/Login';
 import { auth } from './Firebase/Utilities';
+import Contact from './Components/Contact us/Contact';
 
 
 const initialState = {
