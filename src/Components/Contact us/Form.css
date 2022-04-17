@@ -53,13 +53,13 @@
 	padding: 25px 40px;
 }
 
-h2{
+.h2{
 	position: relative;
 	padding: 0 0 10px;
 	margin-bottom: 10px;
 }
 
-h2:after{
+.h2:after{
 	content: '';
     position: absolute;
     left: 50%;
@@ -90,7 +90,7 @@ textarea{
 	min-height: 150px;
 }
 
-.btn{
+.btn-contact{
 	width: 100%;
 	padding: 0.5rem 1rem;
 	background-color: #2ecc71;
@@ -102,7 +102,7 @@ textarea{
 	transition: .3s;
 }
 
-.btn:hover{
+.btn-contact:hover{
     background-color: #27ae60;
 }
 

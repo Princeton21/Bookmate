@@ -13,9 +13,11 @@ class SignIn extends Component {
             <>
             <div className="signin">
                 <div className="wrap">
+                    <div className="heading">
                     <h2>
                         Login
                     </h2>
+                    </div>
                     <div className="formwrap">
                         <form action="" onSubmit={this.handleSubmit}>
                             <div className="socialSignIn">

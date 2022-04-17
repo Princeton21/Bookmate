@@ -4,7 +4,7 @@ import {FcGoogle} from 'react-icons/fc';
 const Button = ({children, ...otherProps}) => {
   return (
     <>
-    <button className='btn' {...otherProps}>
+    <button className='btn-login' {...otherProps}>
     <span className="navbar-toggler-icon" ><FcGoogle size={20} /></span>
       Sign In with Google
     </button>

@@ -8,12 +8,14 @@ const Form  = () => {
 		<div className="contact-box">
 			<div className="left"></div>
 			<div className="right">
+				<div className="h2">
 				<h2>Contact Us</h2>
+				</div>
 				<input type="text" className="field" placeholder="Your Name"/>
 				<input type="text" className="field" placeholder="Your Email"/>
 				<input type="text" className="field" placeholder="Phone"/>
 				<textarea placeholder="Message" className="field"></textarea>
-				<button className="btn">Send</button>
+				<button className="btn-contact">Send</button>
 			</div>
 		</div>
 	</div>
