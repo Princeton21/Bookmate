@@ -12,6 +12,7 @@ import Contact from './Components/Contact us/Contact';
 
 
 
+
 const initialState = {
   currentUser: null
 };
@@ -42,7 +43,7 @@ class App extends Component {
    render(){
     return (
       <>
-      <Navbar/>
+      {/* <Navbar/> */}
       <Routes>
         <Route exact path ="/" element = {<Home/>} />
         <Route exact path ="/sell" element = {<Sell/>} />
@@ -68,6 +69,8 @@ class App extends Component {
            <Cart/>
         </>
         }/>
+     
+
       </Routes>
        {/* <Footer/>  */}
       </>

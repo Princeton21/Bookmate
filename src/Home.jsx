@@ -1,13 +1,15 @@
 import React from 'react'
 import "./CSS/Home.css";
 import MegaMenu from './Components/Home/Menu/MegaMenu';
-import Cards from './Components/Cards/Cards';
 import Slider from './Components/Slider/Slider';
 import Footer from './Footer';
 import CardsMain from './Components/Cards/CardsMain';
+import HomeCards from './Components/Cards/HomeCards';
+import Navbar from './Navbar';
 const Home = () => {
   return (
     <>
+    <Navbar/>
     <div className="home-container">
       {/* <div className="home-menu">
         <MegaMenu/>
@@ -19,7 +21,7 @@ const Home = () => {
         
       </div>
       <div className="home-cards">
-        <Cards/>
+        <HomeCards/>
       </div>
     <CardsMain/>
     </div>
