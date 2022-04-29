@@ -1,7 +1,7 @@
 .sell-box{
     display: block;
     max-width: 34rem; 
-    height: 40rem;
+    height: 34rem;
     border: 1px solid black;
      margin: 4rem auto 6rem; 
      padding-top: 20px;
@@ -10,27 +10,43 @@
 }
 
 .form{
+  display:flex;
+  flex-direction: column;
     justify-content: center;
     padding-left: 20px;
 }
-
-.button{
-    align-items: center;
-    
-}
-
 input #name{
     width: 1000px;
 }
 
 input{
-    width: 500px;
+  display: block;
+    width: 90%;
     padding: 4px;
 }  
 
 textarea{
-    width: 500px;
+    width: 90%;
     border-radius: 3px;
     padding: 4px;
+}
+.post{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.post input{
+  color:white;
+  background: red;
+  width: 4rem;
+  border:none;
+  box-shadow: 1px 1px 2px 0px black;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
