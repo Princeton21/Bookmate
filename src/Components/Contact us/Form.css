@@ -1,11 +1,8 @@
-.Contact{
+.Contact-page{
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 	font-family: 'Quicksand', sans-serif;
-}
-
-.Contact{
 	height: 100vh;
 	width: 100%;
 }
@@ -32,6 +29,7 @@
 	filter: blur(50px);
 	z-index: -1;
 }
+
 .contact-box{
 	max-width: 850px;
 	display: grid;
@@ -53,13 +51,13 @@
 	padding: 25px 40px;
 }
 
-h2{
+contact-title{
 	position: relative;
 	padding: 0 0 10px;
 	margin-bottom: 10px;
 }
 
-h2:after{
+contact-title:after{
 	content: '';
     position: absolute;
     left: 50%;
@@ -90,7 +88,7 @@ textarea{
 	min-height: 150px;
 }
 
-.btn{
+.send-btn{
 	width: 100%;
 	padding: 0.5rem 1rem;
 	background-color: #2ecc71;
@@ -102,7 +100,7 @@ textarea{
 	transition: .3s;
 }
 
-.btn:hover{
+.send-btn:hover{
     background-color: #27ae60;
 }
 
