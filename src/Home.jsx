@@ -3,6 +3,7 @@ import "./CSS/Home.css";
 import MegaMenu from './Components/Home/Menu/MegaMenu';
 import Cards from './Components/Cards/Cards';
 import Slider from './Components/Slider/Slider';
+import Footer from './Footer';
 const Home = () => {
   return (
     <>
@@ -21,6 +22,7 @@ const Home = () => {
       </div>
 
     </div>
+    <Footer/>
     </>
   )
 }

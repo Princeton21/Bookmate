@@ -53,7 +53,7 @@ class App extends Component {
         <Route exact path ="/trending" element = {<Trending/>} />
         <Route exact path ="/newreleases" element = {<New_releases/>} />
       </Routes>
-       <Footer/> 
+       {/* <Footer/>  */}
       </>
     );
    }
