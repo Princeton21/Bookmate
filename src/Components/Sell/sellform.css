@@ -1,0 +1,9 @@
+.sell-box{
+    display: block;
+    max-width: 35rem; 
+    height: 20rem;
+    border: 1px solid black;
+     margin: 4rem auto 6rem; 
+     padding-top: 20px;
+     padding-left: 20 px;
+}

@@ -1,13 +1,10 @@
 import React from 'react'
+import Sellform from './Sellform'
 
 const Sell = () => {
   return (
     <>
-    <div>sell</div>
-    <div>sell</div>
-    <div>sell</div>
-    <div>sell</div>
-    <div>sell</div>
+    <Sellform/>
     </>
     
   )
