@@ -80,7 +80,7 @@ function Sellform() {
             <label>
                 Description:
                 <textarea 
-                placeholder='Describe the book'
+                placeholder='Describe the book in short'
                 onChange={(event) => {
                     setNewDet(event.target.value)
                 }}
@@ -90,7 +90,6 @@ function Sellform() {
             <div className="post">
             <input type="submit" value="Post" onClick={createUser}/>
             </div>
-            
         </form>
         </div>
     </>

@@ -2,7 +2,7 @@
     display: block;
     max-width: 34rem; 
     height: 34rem;
-    border: 1px solid black;
+    box-shadow: 0 0 10px 1px rgb(0 0 0 /0.5);
      margin: 4rem auto 6rem; 
      padding-top: 20px;
      
@@ -25,7 +25,8 @@ input{
     padding: 4px;
 }  
 
-textarea{
+.form textarea{
+  min-height: 2rem;
     width: 90%;
     border-radius: 3px;
     padding: 4px;
