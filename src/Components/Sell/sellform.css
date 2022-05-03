@@ -1,9 +1,57 @@
 .sell-box{
     display: block;
-    max-width: 35rem; 
-    height: 20rem;
+    max-width: 34rem; 
+    height: 40rem;
     border: 1px solid black;
      margin: 4rem auto 6rem; 
      padding-top: 20px;
-     padding-left: 20 px;
+     
+     
 }
+
+.form{
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.button{
+    align-items: center;
+    
+}
+
+/* label{
+    cursor: pointer;
+    display: inline-block;
+    padding: 3px 6px;
+    text-align: right;
+    width: 150px;
+    vertical-align: top;
+}
+input{
+    font-size: inherit;
+}
+
+fieldset{
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    padding: 0 .625em;
+} */
+
+input #name{
+    width: 1000px;
+}
+
+input{
+    width: 500px;
+    padding: 4px;
+}  
+
+textarea{
+    width: 500px;
+    border-radius: 3px;
+    padding: 4px;
+}
+
