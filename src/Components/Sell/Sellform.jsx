@@ -1,65 +1,98 @@
 import React from 'react'
+import { useState,useEffect } from 'react'
+import { db } from '../../Firebase/Utilities'
+import {collection , getDocs, addDoc} from "firebase/firestore"
 import './sellform.css'
+import { async } from '@firebase/util'
 
 function Sellform() {
+ const [users,setUsers] = useState([]);
+ const usersCollectionRef = collection(db,"books");
+
+ useEffect(() =>{
+     const getUsers = async () => {
+         const data = await getDocs(usersCollectionRef);
+         setUsers(data.docs.map((doc) => ({...doc.data(), id:doc.id})));
+     }
+     getUsers();
+ },[]);
+
+ //creating and adding the details to the firestore database
+ const [newYear,setNewYear] = useState("");
+ const [newBook,setNewBook] = useState("");
+ const [newPrice,setNewPrice] = useState(0);
+ const [newDet,setNewDet] = useState("");//newDet == newdescription about the book
+ 
+
+ const createUser = async () => {
+     await addDoc(usersCollectionRef,{
+         year:newYear,
+         book:newBook,
+         price:Number(newPrice),
+         description:newDet
+        })
+ }
+
+
+
+
+
   return (
+      
     <>
         <div className="sell-box">
         <form>
             <h2>Post Advertisement</h2>
-            
             <div className="form">
-            
-            <div className="class">
             <label>
-                Year :
-                <br /> 
-                <input type="text" name="class" />
+                Year:
+                <input 
+                type="text" 
+                name="class" 
+                placeholder="FE/SE/TE/BE"
+                onChange={(event) => {
+                    setNewYear(event.target.value)
+                }}
+                 />
+            </label>
+            <label>
+                Name of the Book:
+                <input 
+                type="text" 
+                name="name" 
+                placeholder="Enter the books name"
+                onChange={(event) => {
+                    setNewBook(event.target.value)
+                }}
+                />
+            </label>
+            <label>
+                Total price:
+                <input 
+                type="number" 
+                name="name" 
+                placeholder="Enter the price"
+                onChange={(event) => {
+                    setNewPrice(event.target.value)
+                }}
+                />
+            </label>
+            <label>
+                Description:
+                <textarea 
+                placeholder='Describe the book'
+                onChange={(event) => {
+                    setNewDet(event.target.value)
+                }}
+                ></textarea>
             </label>
             </div>
-            <br />
+            <div className="post">
+            <input type="submit" value="Post" onClick={createUser}/>
+            </div>
             
-
-            <div className="name">
-            <label>
-                Name of the Book : 
-                <br />
-                <input type="text" name="name" />
-            </label>
-            </div>
-            <br />
-
-            <div className="name">
-            <label>
-                Price of the Book : 
-                <br />
-                <input type="text" name="name" />
-            </label>
-            </div>
-            <br />
-            
-
-            <div className="describe">
-            <label>
-                Description : 
-                <br />
-                <textarea placeholder='Describe about the book'></textarea>
-            </label>
-            </div>
-            <br />
-            
-
-            <div className="button">
-            <input type="submit" value="Post" />
-            </div>
-            <br />
-
-            </div>
-
         </form>
         </div>
-        
-        
     </>
   )
 }
