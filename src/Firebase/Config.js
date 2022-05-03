@@ -1,5 +1,5 @@
 export const firebaseConfig = {
-    apiKey: "AIzaSyD4cpfb39sBz_t6KYFQScqrKWZ99qWk1Wk",
+    apiKey: "REACT_APP_FIREBAS_API_KEY",
     authDomain: "bookmate-0o.firebaseapp.com",
     projectId: "bookmate-0o",
     storageBucket: "bookmate-0o.appspot.com",
