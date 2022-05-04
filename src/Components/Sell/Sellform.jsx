@@ -55,6 +55,7 @@ function Sellform() {
                 }}
                  />
             </label>
+            <br />
             <label>
                 Name of the Book:
                 <input 
@@ -66,6 +67,7 @@ function Sellform() {
                 }}
                 />
             </label>
+            <br />
             <label>
                 Total price:
                 <input 
@@ -77,6 +79,7 @@ function Sellform() {
                 }}
                 />
             </label>
+            <br />
             <label>
                 Description:
                 <textarea 
@@ -86,6 +89,7 @@ function Sellform() {
                 }}
                 ></textarea>
             </label>
+            <br />
             </div>
             <div className="post">
             <input type="submit" value="Post" onClick={createUser}/>
