@@ -2,6 +2,7 @@ import './App.css';
 import React, {Component} from 'react';
 import {Route , Routes} from  'react-router-dom';
 import Sell from './Components/Sell/Sell';
+import Cart from './Components/Carts Page/Cart'
 import Home from './Home';
 import Navbar from './Navbar';
 import Footer from './Footer';
@@ -50,6 +51,26 @@ class App extends Component {
         <Route exact path ="/sell" element = {<Sell/>} />
         <Route exact path ="/login" element = {<Login/>} />
         <Route exact path ="/contact" element = {<Contact/>} />
+        <Route exact path = "/Cart" element = {
+          <>
+          <div className='year-name'>
+                FE
+            </div>
+           <Cart/>
+           <div className='year-name'>
+                SE
+            </div>
+           <Cart/>
+           <div className='year-name'>
+                TE
+            </div>
+           <Cart/>
+           <div className='year-name'>
+                BE
+            </div>
+           <Cart/>
+        </>
+        }/>
         <Route exact path ="/bestsellers" element = {<Best_sellers/>} />
         <Route exact path ="/trending" element = {<Trending/>} />
         <Route exact path ="/newreleases" element = {<New_releases/>} />
