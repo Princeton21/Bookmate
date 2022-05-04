@@ -86,6 +86,9 @@ ul{
 	color: #24262b;
 	background-color: #ffffff;
 }
+p{
+	text-align: left;
+}
 
 /*responsive*/
 @media(max-width: 767px){

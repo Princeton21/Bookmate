@@ -9,26 +9,25 @@ const Footer = () => {
   	 		<div className="footer-col">
   	 			<h4>Abous us</h4>
   	 			<p>
-             Bookmate is a platform where we are aimed to provide books to the needy.
-             You can also sell and buy the second hand books.
+                Platform to connect seniors with juniors. Where old books of seniors can be sell to the juniors at huge discount price.
            </p>
   	 		</div>
   	 		<div class="footer-col">
   	 			<h4>Quick Links</h4>
   	 			<ul>
             <li><Link to="#">Home</Link></li>
-  	 				<li><Link to="#">Sell</Link></li>
-  	 				<li><Link to="#">Login</Link></li>
-  	 				<li><Link to="#">Carts</Link></li>
+  	 				<li><Link to="/sell">Sell</Link></li>
+  	 				<li><Link to="/login">Login</Link></li>
+  	 				<li><Link to="/cart">Carts</Link></li>
   	 			</ul>
   	 		</div>
   	 		<div class="footer-col">
-  	 			<h4>My Account</h4>
+  	 			<h4>Year</h4>
   	 			<ul>
-  	 				<li><Link to="#">Shopping Cart</Link></li>
-  	 				<li><Link to="#">Order History</Link></li>
-  	 				<li><Link to="#">Wish List</Link></li>
-  	 				<li><Link to="#">Settings</Link></li>
+  	 				<li><Link to="/cart">FE</Link></li>
+  	 				<li><Link to="/cart">SE</Link></li>
+  	 				<li><Link to="/cart">TE</Link></li>
+  	 				<li><Link to="/cart">BE</Link></li>
   	 			</ul>
   	 		</div>
   	 		<div class="footer-col">
