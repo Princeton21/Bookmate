@@ -34,10 +34,10 @@ const Footer = () => {
   	 		<div class="footer-col">
   	 			<h4>follow us</h4>
   	 			<div class="social-links">
-  	 				<Link to="#"><i class="fab fa-facebook-f"></i></Link>
-  	 				<Link to="#"><i class="fab fa-twitter"></i></Link>
-  	 				<Link to="#"><i class="fab fa-instagram"></i></Link>
-  	 				<Link to="#"><i class="fab fa-linkedin-in"></i></Link>
+  	 				<a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+  	 				<a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+  	 				<a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
   	 			</div>
   	 		</div>
   	 	</div>
