@@ -86,7 +86,9 @@ ul{
 	color: #24262b;
 	background-color: #ffffff;
 }
-
+p{
+	text-align: left;
+}
 /*responsive*/
 @media(max-width: 767px){
   .footer-col{
@@ -94,6 +96,7 @@ ul{
     margin-bottom: 30px;
 }
 }
+
 @media(max-width: 574px){
   .footer-col{
     width: 100%;
