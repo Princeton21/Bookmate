@@ -91,7 +91,7 @@ textarea{
 .send-btn{
 	width: 100%;
 	padding: 0.5rem 1rem;
-	background-color: #2ecc71;
+	background-color: orangered;
 	color: #fff;
 	font-size: 1.1rem;
 	border: none;
@@ -101,7 +101,7 @@ textarea{
 }
 
 .send-btn:hover{
-    background-color: #27ae60;
+    background-color: orangered;
 }
 
 .field:focus{

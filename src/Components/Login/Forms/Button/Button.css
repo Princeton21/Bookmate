@@ -4,17 +4,17 @@
     font-size: 23;
     line-height: 1;
     
-    background: rgb(240, 233, 229);
+    background: rgb(227, 184, 170);
     text-transform: uppercase;
     outline: none;
-    padding:1rem 0;
+    padding:10px;
     font-weight: 500;
     margin: 0 auto;
     border: 1px  black;
     cursor: pointer;
     /* color: white; */
     
-    border-radius: 35px;
+    border-radius: 25px;
     
     
     
