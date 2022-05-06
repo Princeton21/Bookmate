@@ -22,12 +22,12 @@ const MegaMenu = () => {
                 <img src={img} alt="book" />
               </div>
               <div className="row">
-                <h2>Genres</h2>
+                <h2>Subjects</h2>
                 <ul className="mega-links">
-                  <li><Link to="/action">Action</Link></li>
-                  <li><Link to="/thriller">Thriller</Link></li>
-                  <li><Link to="/romance">Romance</Link></li>
-                  <li><Link to="/sci-fi">Sci fi</Link></li>
+                  <li><Link to="/math">Mathematics</Link></li>
+                  <li><Link to="/dsa">Data Structures</Link></li>
+                  <li><Link to="/oops">OOPs</Link></li>
+                  <li><Link to="/elec">Electronics</Link></li>
                 </ul>
               </div>
               <div className="row">
