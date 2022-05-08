@@ -27,15 +27,18 @@ body {
   
   .grid > article img {
    /* image fits into card */
-   min-width: 100%;
- height: 70px;
- border-radius: 20px;
+    min-width: 100%;
+    height: 70px;
+    border-radius: 20px;
+    padding-bottom: 5px;
   }
   
   .text {
     padding : 0 20px  ;
     
   }
+
+  
   
   .text h3 {
     text-transform: uppercase;
@@ -51,7 +54,7 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
-    margin-bottom : 20px;
+    margin-bottom : 10px;
   }
   
   @media (max-width: 768px) {

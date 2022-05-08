@@ -37,7 +37,7 @@ const Cards = () => {
             </div>
             <div className="card-btn">
               <button>
-                <Link to='/' id='card-btn-link'>View more</Link>
+                <Link to='/' id='card-btn-link'>Add to cart</Link>
               </button>
               </div>
           </div>
