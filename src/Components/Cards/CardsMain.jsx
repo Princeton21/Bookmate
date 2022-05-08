@@ -10,7 +10,7 @@ const CardsMain = () => {
                     <div className="text">
                         <h3>FE</h3>
                         <img src={require("../Home/assets/images/1.jpg")} alt='FE'/>
-                        <button >View More</button>
+                        <button >View more</button>
                     </div>
                 </article>
 

@@ -8,6 +8,9 @@ import { async } from '@firebase/util'
 function Sellform() {
  const [users,setUsers] = useState([]);
  const usersCollectionRef = collection(db,"books");
+ const [productImg, setProductImg] = useState(null);
+const [error, setError] = useState('');
+const types = ['image/png', 'image/jpeg']; // image types
 
  useEffect(() =>{
      const getUsers = async () => {
@@ -16,6 +19,18 @@ function Sellform() {
      }
      getUsers();
  },[]);
+
+ const productImgHandler = (e) => {
+    let selectedFile = e.target.files[0];
+    if (selectedFile && types.includes(selectedFile.type)) {
+        setProductImg(selectedFile);
+        setError('')
+    }
+    else {
+        setProductImg(null);
+        setError('Please select a valid image type (jpg or png)');
+    }
+}
 
  //creating and adding the details to the firestore database
  const [newYear,setNewYear] = useState("");
@@ -79,8 +94,15 @@ function Sellform() {
                 }}
                 />
             </label>
+
             <br />
+            <label htmlFor="product-img">Product Image</label>
+                <input type="file" className='form-control' id="file" required
+                    onChange={productImgHandler} />
+                <br />
+            
             <label>
+
                 Description:
                 <textarea 
                 placeholder='Describe the book in short'
