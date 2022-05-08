@@ -1,7 +1,7 @@
 .sell-box{
     display: block;
     max-width: 34rem; 
-    height: 34rem;
+    height: 38rem;
     box-shadow: 0 0 10px 1px rgb(0 0 0 /0.5);
      margin: 4rem auto 6rem; 
      padding-top: 20px;
@@ -49,5 +49,13 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.form-control{
+  display: block;
+  width: 90%;
+  padding: 4px;
+  border-radius: 3px;
+  border-color: black;
 }
 

@@ -36,8 +36,9 @@ const Cards = () => {
               </div>
             </div>
             <div className="card-btn">
-              <button>
-                <Link to='/' id='card-btn-link'>View more</Link>
+              <button onClick={()=>dispatchEvent({})}>
+                <Link to='/cart' id='card-btn-link'>Add to Cart</Link>
+                
               </button>
               </div>
           </div>
