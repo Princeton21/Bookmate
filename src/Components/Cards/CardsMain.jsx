@@ -12,6 +12,13 @@ const CardsMain = () => {
                     <div className="text">
                         <h3>FE</h3>
                         <img src={require("../Home/assets/images/1.jpg")} alt='FE'/>
+                        <button className='CardsMain-btn'>
+                            <Link to="./FE" className='cards-link'>
+                                <h6 className='cards-btn-h6'>
+                                    View More
+                                </h6>
+                            </Link>
+                        </button>
 
                     </div>
                 </article>
@@ -21,7 +28,13 @@ const CardsMain = () => {
                     <div className="text">
                         <h3>SE</h3>
                         <img src={require("../Home/assets/images/12.jpg")} alt='SE'/>
-                        <button><Link to="./SE" style={{ textDecoration: 'none' }}><h6 style = {{color: 'black'}}>View More</h6></Link></button>
+                        <button className='CardsMain-btn'>
+                            <Link to="./SE" className='cards-link'>
+                                <h6 className='cards-btn-h6'>
+                                    View More
+                                </h6>
+                            </Link>
+                        </button>
                     </div>
                 </article>
 
@@ -30,7 +43,13 @@ const CardsMain = () => {
                     <div className="text">
                         <h3>TE</h3>
                         <img src={require("../Home/assets/images/13.jpg")} alt='TE'/>
-                        <button><Link to="./TE" style={{ textDecoration: 'none' }}><h6 style = {{color: 'black'}}>View More</h6></Link></button>
+                        <button className='CardsMain-btn'>
+                            <Link to="./TE" className='cards-link'>
+                                <h6 className='cards-btn-h6' >
+                                    View More
+                                </h6>
+                            </Link>
+                        </button>
                     </div>
                 </article>
 
@@ -39,7 +58,13 @@ const CardsMain = () => {
                     <div className="text">
                         <h3>BE</h3>
                         <img src={require("../Home/assets/images/14.jpg")} alt='BE'/>
-                        <button><Link to="./BE" style={{ textDecoration: 'none' }}><h6 style = {{color: 'black'}}>View More</h6></Link></button>
+                        <button className='CardsMain-btn'>
+                            <Link to="./BE" className='cards-link'>
+                                <h6 className='cards-btn-h6'>
+                                    View More
+                                </h6>
+                            </Link>
+                        </button>
                     </div>
                 </article>
 
