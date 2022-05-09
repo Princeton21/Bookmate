@@ -18,6 +18,7 @@ const Cards = () => {
                 <div className="card-price">
                     <p>{card.price}</p>
                 </div>
+                
                 <div className="card-text">
                     <p>{card.text}</p>
                 </div>
