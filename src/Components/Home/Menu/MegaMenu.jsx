@@ -18,27 +18,6 @@ const MegaMenu = () => {
           <div className={dropdown ? "mega-bx-active":"mega-bx-inactive"}>
           <div className="mega-box">
             <div className="content">
-              {/* <div className="row">
-                <img src={img} alt="book" />
-              </div>
-              <div className="row">
-                <h2>Subjects</h2>
-                <ul className="mega-links">
-                  <li><Link to="/math">Mathematics</Link></li>
-                  <li><Link to="/dsa">Data Structures</Link></li>
-                  <li><Link to="/oops">OOPs</Link></li>
-                  <li><Link to="/elec">Electronics</Link></li>
-                </ul>
-              </div>
-              <div className="row">
-                <h2>Year</h2>
-                <ul className="mega-links">
-                  <li><Link to="/">FE</Link></li>
-                  <li><Link to="/">SE</Link></li>
-                  <li><Link to="/">TE</Link></li>
-                  <li><Link to="/">BE</Link></li>
-                </ul>
-              </div>*/}
               <div className="row">
                 <h2>Department</h2>
                 <ul className="mega-links">
@@ -54,9 +33,6 @@ const MegaMenu = () => {
             </div>
           </div>
         </li>
-        <li><Link to="/bestsellers">Best Sellers</Link></li>
-        <li><Link to="/trending">Trending</Link></li>
-        <li><Link to="/newreleases">New Releases</Link></li>
       </ul>
     </div>
   </>
