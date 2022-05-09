@@ -9,9 +9,9 @@ const Home = () => {
   return (
     <>
     <div className="home-container">
-      <div className="home-menu">
+      {/* <div className="home-menu">
         <MegaMenu/>
-      </div>
+      </div> */}
       <div className="menu-slider">
         <Slider/>
       </div>
