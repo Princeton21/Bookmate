@@ -38,7 +38,18 @@ body {
     
   }
 
-  
+  .CardsMain-btn {
+    text-decoration: none;
+  }
+
+  .cards-link {
+    text-decoration: none;
+  }
+
+  .cards-btn-h6 {
+    color:black;
+    font-size: 1rem;
+  }
   
   .text h3 {
     text-transform: uppercase;
