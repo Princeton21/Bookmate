@@ -1,5 +1,7 @@
-import React from 'react'
-import "./CardsMain.css"
+import React from 'react';
+import { Link } from 'react-router-dom';
+import "./CardsMain.css";
+
 const CardsMain = () => {
   return (
     <body>
@@ -10,7 +12,7 @@ const CardsMain = () => {
                     <div className="text">
                         <h3>FE</h3>
                         <img src={require("../Home/assets/images/1.jpg")} alt='FE'/>
-                        <button >View more</button>
+
                     </div>
                 </article>
 
@@ -19,7 +21,7 @@ const CardsMain = () => {
                     <div className="text">
                         <h3>SE</h3>
                         <img src={require("../Home/assets/images/12.jpg")} alt='SE'/>
-                        <button>View More</button>
+                        <button><Link to="./SE" style={{ textDecoration: 'none' }}><h6 style = {{color: 'black'}}>View More</h6></Link></button>
                     </div>
                 </article>
 
@@ -28,7 +30,7 @@ const CardsMain = () => {
                     <div className="text">
                         <h3>TE</h3>
                         <img src={require("../Home/assets/images/13.jpg")} alt='TE'/>
-                        <button>View More</button>
+                        <button><Link to="./TE" style={{ textDecoration: 'none' }}><h6 style = {{color: 'black'}}>View More</h6></Link></button>
                     </div>
                 </article>
 
@@ -37,7 +39,7 @@ const CardsMain = () => {
                     <div className="text">
                         <h3>BE</h3>
                         <img src={require("../Home/assets/images/14.jpg")} alt='BE'/>
-                        <button>View More</button>
+                        <button><Link to="./BE" style={{ textDecoration: 'none' }}><h6 style = {{color: 'black'}}>View More</h6></Link></button>
                     </div>
                 </article>
 
