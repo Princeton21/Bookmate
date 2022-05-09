@@ -14,7 +14,7 @@ body {
     background: #eee5e9;
     border: none;
     box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
-    border-radius: 20px;
+    border-radius: 5px;
     text-align: center;
     width: 250px;
     transition: transform .3s;

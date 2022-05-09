@@ -12,7 +12,7 @@ const CardsMain = () => {
                     <div className="text">
                         <h3>FE</h3>
                         <img src={require("../Home/assets/images/1.jpg")} alt='FE'/>
-                        <button><Link to="./FE" style={{ textDecoration: 'none' }}><h6 style = {{color:'black'}}>View More</h6></Link></button>
+
                     </div>
                 </article>
 
