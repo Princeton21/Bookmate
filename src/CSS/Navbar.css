@@ -26,15 +26,16 @@
 
 }
 .navbar{
-    background-color: rgb(230, 81, 44) !important;
+    background-color: rgb(230, 81, 44) !important; 
 }
 .navbar-brand{
-    color: white !important;
+    color: white !important; 
     font-weight: bold !important;
     padding-left: 10px;
 }
 .nav-link{
-    color: white !important;
+    color: white !important; 
+    
 }
 .content{
     padding-top: 80 px; 
