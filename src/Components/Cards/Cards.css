@@ -11,7 +11,7 @@
 .card-container{
   background: #eee5e9;
   border: none;
-  width: 300px;
+  width: 250px;
   border-radius: 2px;
   overflow: hidden;
   box-shadow: 0px 0px 15px -5px;
@@ -27,7 +27,7 @@ transition: .2s;
 }
 .card-image img{
   min-width: 100%;
-  height: auto;
+  height: 50rem;
 overflow: hidden;
 height: 200px;
 }
@@ -60,20 +60,20 @@ text-align: center;
   padding: 0.5rem;
   transition: 0.2;
   background: #ef6f6c;
-  border-radius: 20px;
+  border-radius: 2px;
   border: none;
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
   cursor: pointer;
   margin-bottom : 20px;
-  width: 41%;
+  width: 90%;
 }
 
 
 .card-btn button:hover {
 background: rgba(177, 124, 9, 0.226);
-border-radius: 20px;
+border-radius: 2px;
 }
 
 #card-btn-link{
