@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import './CSS/Navbar.css';
 import { Link } from 'react-router-dom';
 import {FaBars} from 'react-icons/fa';
+import {AiOutlineShoppingCart} from 'react-icons/ai'
 
 const Navbar = () => {
   return (
@@ -20,12 +21,17 @@ const Navbar = () => {
             
             <li className="nav-item">
               <Link className="nav-link" to="/login">Login</Link>
+
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/contact">Contact Us</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/cart">cart</Link>
+            <div className="cart-icon">
+            <Link className="nav-link" to="/cart">Cart
+            <AiOutlineShoppingCart size="1.8em"></AiOutlineShoppingCart>
+            </Link>
+            </div>
             </li>
           </ul>
         </div>
