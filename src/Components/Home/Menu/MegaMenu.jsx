@@ -22,12 +22,12 @@ const MegaMenu = () => {
               <div className="row">
                 <h2>Department</h2>
                 <ul className="mega-links">
-                  <li><Link to="/ENTC">ENTC</Link></li>
-                  <li><Link to="/Computer">Computer</Link></li>
-                  <li><Link to="/Mechanical">Mechanical</Link></li>
-                  <li><Link to="/Civil">Civil</Link></li>
-                  <li><Link to="/Civil">AI</Link></li>
-                  <li><Link to="/Civil">IT</Link></li>
+                  <li><Link to="/Cart">ENTC</Link></li>
+                  <li><Link to="/Cart">Comp</Link></li>
+                  <li><Link to="/Cart">Mech</Link></li>
+                  <li><Link to="/Cart">Civil</Link></li>
+                  <li><Link to="/Cart">AI</Link></li>
+                  <li><Link to="/Cart">IT</Link></li>
                 </ul>
               </div>
             </div> 
