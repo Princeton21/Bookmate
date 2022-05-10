@@ -52,6 +52,20 @@
     text-transform: uppercase;
     font-weight: 900;
 }
+
+.cart-icon {
+  display: flex;
+  text-align: end;
+  margin-right: 2rem;
+  align-items: center;
+  position: relative;
+  justify-content: flex-end;
+  width: 4rem;
+  height: 4rem;
+}
+ 
+
+
   @media (max-width: 768px) {
     .card-main-body {
       grid-template-columns:1fr ;
