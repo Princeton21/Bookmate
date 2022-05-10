@@ -6,9 +6,6 @@ import Cart from './Components/Carts Page/Cart'
 import Home from './Home';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import Best_sellers from './Components/Card_pages/Best_sellers';
-import Trending from './Components/Card_pages/Trending';
-import New_releases from './Components/Card_pages/New_releases';
 import Login from './Components/Login/Login';
 import { auth } from './Firebase/Utilities';
 import Contact from './Components/Contact us/Contact';
@@ -71,9 +68,6 @@ class App extends Component {
            <Cart/>
         </>
         }/>
-        <Route exact path ="/bestsellers" element = {<Best_sellers/>} />
-        <Route exact path ="/trending" element = {<Trending/>} />
-        <Route exact path ="/newreleases" element = {<New_releases/>} />
       </Routes>
        {/* <Footer/>  */}
       </>
