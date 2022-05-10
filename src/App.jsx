@@ -9,7 +9,7 @@ import Footer from './Footer';
 import Login from './Components/Login/Login';
 import { auth } from './Firebase/Utilities';
 import Contact from './Components/Contact us/Contact';
-
+import NotFound from './Components/404/NotFound';
 
 
 
@@ -69,7 +69,8 @@ class App extends Component {
            <Cart/>
         </>
         }/>
-     
+        {/* <Route path="*" element={<Navigate to="/" />} /> */}
+        <Route path="*" element={<NotFound/>} />
 
       </Routes>
        {/* <Footer/>  */}
