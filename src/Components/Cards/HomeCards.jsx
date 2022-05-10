@@ -1,13 +1,11 @@
 import React from 'react'
 import { useState,useEffect } from 'react'
 import { Link } from 'react-router-dom';
-import './Cards.css'
+import './HomeCards.css'
 import {collection , getDocs} from "firebase/firestore"
 import { db } from '../../Firebase/Utilities'
-
-
 import { cardInfo } from './Card_data';
-const Cards = () => {
+const HomeCards = () => {
   const [users,setUsers] = useState([]);
   const usersCollectionRef = collection(db,"books");
 
@@ -37,7 +35,9 @@ const Cards = () => {
             </div>
             <div className="card-btn">
 
-              <button onClick={()=>dispatchEvent({})}>
+              <button onClick={()=>dispatchEvent({
+                
+              })}>
                 <Link to='/cart' id='card-btn-link'>Add to Cart</Link>
                 
 
@@ -49,4 +49,4 @@ const Cards = () => {
     })}</div>;
 }
 
-export default Cards
+export default HomeCards
