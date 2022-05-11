@@ -13,6 +13,8 @@ import Signup1 from './login1/Signup1';
 import { auth } from './Firebase/Utilities';
 import Contact from './Components/Contact us/Contact';
 import NotFound from './Components/404/NotFound';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 
 
@@ -57,6 +59,7 @@ class App extends Component {
         <Route exact path ="/contact" element = {<Contact/>} />
         <Route exact path = "/Cart" element = {
           <>
+          <Navbar/>
           <div className='year-name'>
                 FE
             </div>
@@ -73,6 +76,8 @@ class App extends Component {
                 BE
             </div>
            <Cart/>
+           <Footer/>
+
         </>
         }/>
         {/* <Route path="*" element={<Navigate to="/" />} /> */}
