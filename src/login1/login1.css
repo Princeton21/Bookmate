@@ -1,0 +1,27 @@
+.container1{
+    display: block;
+    max-width: 34rem; 
+    height: 38rem;
+    box-shadow: 0 0 10px 1px rgb(0 0 0 /0.5);
+     margin: 4rem auto 6rem; 
+     padding-top: 20px;
+     justify-content: center;
+     padding-left: 25px;
+}
+input #name{
+    width: 1000px;
+}
+
+input{
+  display: block;
+    width: 90%;
+    padding: 4px;
+} 
+
+.login-btn {
+    border-radius: 1px;
+}
+
+.h2{
+    text-align: center;
+}

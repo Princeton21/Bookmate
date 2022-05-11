@@ -4,7 +4,24 @@ import { Link } from 'react-router-dom';
 import {FaBars} from 'react-icons/fa';
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 
-const Navbar = () => {
+
+
+import { auth } from './Firebase/Utilities';
+// import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
+const Navbar = ({user}) => {
+  
+  // const history = useHistory();
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    auth.signOut().then(() => {
+        // history.push('/login');
+        navigate('/login1');
+    })
+}
+  
   return (
       <>
         <div className='header'>
@@ -20,18 +37,29 @@ const Navbar = () => {
             </li>
             
             <li className="nav-item">
-              <Link className="nav-link" to="/login">Login</Link>
+            {!user && <div className='rightside'>
+                {/* <span><Link to="signup" className='navlink'>SIGN UP</Link></span> */}
+                {/* <span><Link to="login" className='navlink'>LOGIN</Link></span> */}
+                <Link className="nav-link" to="/login1">Login</Link>
+            </div>}
+
+
+              
 
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/contact">Contact Us</Link>
             </li>
             <li className="nav-item">
-            <div className="cart-icon">
-            <Link className="nav-link" to="/cart">Cart
-            <AiOutlineShoppingCart size="1.8em"></AiOutlineShoppingCart>
-            </Link>
-            </div>
+            
+            <Link className="nav-link" to="/cart">Cart</Link>
+            
+            </li>
+            <li>
+            {user && <div className='rightside'>
+                <span><Link to="/" className='navlink'>{user}</Link></span>
+                <span><button className='logout-btn' onClick={handleLogout}>Logout</button></span>
+            </div>}
             </li>
           </ul>
         </div>
