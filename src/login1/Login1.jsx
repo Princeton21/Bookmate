@@ -34,7 +34,9 @@ export const Login = (props) => {
                     onChange={(e) => setPassword(e.target.value)} value={password} />
                 <br />
                 <div className="login-btn">
-                <button type="submit" className='btn btn-success btn-md mybtn'>LOGIN</button>
+                <button type="submit" className='btn btn-success btn-md mybtn'>
+                    <Link to = '/'>LOGIN</Link>
+                </button>
                 </div>
             </form>
             {error && <span className='error-msg'>{error}</span>}
