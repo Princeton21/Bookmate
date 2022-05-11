@@ -22,7 +22,7 @@ const HomeCards = () => {
         <>
           <div className='card-container'>
             <div className="card-image">
-            <img src={require("../Home/assets/images/1.jpg")} alt="This the book image"/>
+            <img src={user.url} alt="This the book image"/>
             </div>
             <div className="card-body">
               <div className="card-title">
