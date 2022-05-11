@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../../Navbar'
 import Sellform from './Sellform'
-import Sellform1 from './Sellform1'
+// import Sellform1 from './Sellform1'
 import Sellformimg from './Sellformimg'
 
 const Sell = () => {

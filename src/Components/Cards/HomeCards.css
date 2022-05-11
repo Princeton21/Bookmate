@@ -26,10 +26,12 @@ box-shadow:0px 0px 15px 0px;
 transition: .2s;
 }
 .card-image img{
-  min-width: 100%;
+  min-width: 80%;
   height: auto;
 overflow: hidden;
 height: 200px;
+padding-left: 50px;
+padding-top: 10px;
 }
 
 .card-body{
@@ -57,23 +59,23 @@ text-align: center;
 
 .card-btn button {
   justify-content: center;
-  padding: 0.5rem;
+  padding: 1rem;
   transition: 0.2;
   background: #ef6f6c;
-  border-radius: 20px;
+  border-radius: 10px;
   border: none;
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
   cursor: pointer;
   margin-bottom : 20px;
-  width: 41%;
+  width: 90%;
 }
 
 
 .card-btn button:hover {
 background: rgba(177, 124, 9, 0.226);
-border-radius: 20px;
+border-radius: 10px;
 }
 
 #card-btn-link{
