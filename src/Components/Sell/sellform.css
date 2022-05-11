@@ -45,6 +45,7 @@ input{
 }
 
 
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -59,3 +60,6 @@ input::-webkit-inner-spin-button {
   border-color: black;
 }
 
+.img-btn {
+  width: 8rem;
+}

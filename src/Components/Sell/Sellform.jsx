@@ -3,55 +3,33 @@ import { useState,useEffect } from 'react'
 import { db } from '../../Firebase/Utilities'
 import {collection , getDocs, addDoc} from "firebase/firestore"
 import './sellform.css'
-import { async } from '@firebase/util'
+import Sellformimg from './Sellformimg'
 
 function Sellform() {
  const [users,setUsers] = useState([]);
  const usersCollectionRef = collection(db,"books");
- const [productImg, setProductImg] = useState(null);
-const [error, setError] = useState('');
-const types = ['image/png', 'image/jpeg']; // image types
 
- useEffect(() =>{
-     const getUsers = async () => {
-         const data = await getDocs(usersCollectionRef);
-         setUsers(data.docs.map((doc) => ({...doc.data(), id:doc.id})));
-     }
-     getUsers();
- },[]);
-
- const productImgHandler = (e) => {
-    let selectedFile = e.target.files[0];
-    if (selectedFile && types.includes(selectedFile.type)) {
-        setProductImg(selectedFile);
-        setError('')
-    }
-    else {
-        setProductImg(null);
-        setError('Please select a valid image type (jpg or png)');
-    }
-}
-
- //creating and adding the details to the firestore database
  const [newYear,setNewYear] = useState("");
  const [newBook,setNewBook] = useState("");
  const [newPrice,setNewPrice] = useState(0);
- const [newDet,setNewDet] = useState("");//newDet == newdescription about the book
- 
+ const [newDet,setNewDet] = useState("");   //newDet == newdescription about the book
+ const [newImgUrl,setNewImgUrl] = useState("");
 
- const createUser = async () => {
+
+
+ const [newUrl,setNewUrl] = useState("");
+
+
+ const createUser = async (e) => {
+     e.preventDefault()
      await addDoc(usersCollectionRef,{
          year:newYear,
          book:newBook,
          price:Number(newPrice),
-         description:newDet
+         description:newDet,
+         url:newUrl
         })
  }
-
-
-
-
-
   return (
       
     <>
@@ -96,9 +74,12 @@ const types = ['image/png', 'image/jpeg']; // image types
             </label>
 
             <br />
-            <label htmlFor="product-img">Product Image</label>
+            {/* <label>Book Image</label>
                 <input type="file" className='form-control' id="file" required
-                    onChange={productImgHandler} />
+                    onChange={(event) =>{
+                        setNewImgUrl(event.target.value)
+                    }} /> */}
+            <Sellformimg setNewUrl = {setNewUrl} />
                 <br />
             
             <label>
