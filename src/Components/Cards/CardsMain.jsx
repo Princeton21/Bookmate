@@ -37,7 +37,6 @@ const CardsMain = () => {
                         </button>
                     </div>
                 </article>
-
                 <article>
                     
                     <div className="text">
