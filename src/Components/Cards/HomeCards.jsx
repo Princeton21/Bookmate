@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import './HomeCards.css'
 import {collection , getDocs , doc ,deleteDoc} from "firebase/firestore"
 import { db } from '../../Firebase/Utilities'
+// import { cardInfo } from './Card_data';
+
 const HomeCards = () => {
   const [users,setUsers] = useState([]);
   const usersCollectionRef = collection(db,"books");
@@ -21,6 +23,7 @@ const HomeCards = () => {
     await deleteDoc(userDoc);
   }
    
+    // return <div className="card-main-body">{cardInfo.map((user) =>{
     return <div className="card-main-body">{users.map((user) =>{
       return ( 
         <>
