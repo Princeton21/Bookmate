@@ -2,9 +2,8 @@ import React from 'react'
 import { useState,useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import './HomeCards.css'
-import {collection , getDocs} from "firebase/firestore"
+import {collection , getDocs , doc ,deleteDoc} from "firebase/firestore"
 import { db } from '../../Firebase/Utilities'
-import { cardInfo } from './Card_data';
 const HomeCards = () => {
   const [users,setUsers] = useState([]);
   const usersCollectionRef = collection(db,"books");
@@ -15,14 +14,19 @@ const HomeCards = () => {
           setUsers(data.docs.map((doc) => ({...doc.data(), id:doc.id})));
       }
       getUsers();
-  },[]);
+  });
+
+  const deleteBook = async (id) => {
+    const userDoc = doc(db,"books",id);
+    await deleteDoc(userDoc);
+  }
    
     return <div className="card-main-body">{users.map((user) =>{
       return ( 
         <>
           <div className='card-container'>
             <div className="card-image">
-            <img src={user.url} alt="This the book image"/>
+            <img src={user.url} alt="This the book pic"/>
             </div>
             <div className="card-body">
               <div className="card-title">
@@ -39,9 +43,10 @@ const HomeCards = () => {
                 
               })}>
                 <Link to='/cart' id='card-btn-link'>Add to Cart</Link>
-                
-
               </button>
+              <button className='card-btn' onClick={() => {
+                deleteBook(user.id)
+              }}>Delete book</button>
               </div>
           </div>
         </>

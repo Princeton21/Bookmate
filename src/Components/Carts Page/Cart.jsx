@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import './Cart.css'
 import { cardInfo } from './Cart_data';
 
@@ -9,7 +8,7 @@ const Cards = () => {
           <>
             <div className='card-container'>
               <div className="card-image">
-              <img src={card.image} alt="This is  book image"/>
+              <img src={card.image} alt="There's a book's pic here"/>
               </div>
               <div className="card-body">
                 <div className="card-title">
