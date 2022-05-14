@@ -4,12 +4,8 @@ import { Link } from 'react-router-dom';
 import './HomeCards.css'
 import {collection , getDocs , doc ,deleteDoc} from "firebase/firestore"
 import { db } from '../../Firebase/Utilities'
-<<<<<<< Updated upstream
 // import { cardInfo } from './Card_data';
-=======
-import { cardInfo } from './Card_data';
 import { BsSuitHeartFill } from "react-icons/bs"
->>>>>>> Stashed changes
 
 const HomeCards = () => {
   const [users,setUsers] = useState([]);
