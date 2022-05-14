@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom';
 import './HomeCards.css'
 import {collection , getDocs , doc ,deleteDoc} from "firebase/firestore"
 import { db } from '../../Firebase/Utilities'
-import { cardInfo } from './Card_data';
+// import { cardInfo } from './Card_data';
 import { BsSuitHeartFill } from "react-icons/bs"
+import Fav from '../Favorites/Fav';
 
 const HomeCards = () => {
   const [users,setUsers] = useState([]);
@@ -24,12 +25,12 @@ const HomeCards = () => {
     await deleteDoc(userDoc);
   }
    
-    return <div className="card-main-body">{cardInfo.map((user) =>{
-    // return <div className="card-main-body">{users.map((user) =>{
+    // return <div className="card-main-body">{cardInfo.map((user) =>{
+    return <div className="card-main-body">{users.map((user) =>{
       return ( 
         <>
           <div className='card-container'>
-            <button className='card-heart'><BsSuitHeartFill  ></BsSuitHeartFill></button>
+            <button className='card-heart'><BsSuitHeartFill onClick={<Fav/>}></BsSuitHeartFill></button>
             <div className="card-image">
             <img src={user.url} alt="This the book pic"/>
             </div>
