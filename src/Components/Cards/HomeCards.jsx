@@ -4,7 +4,12 @@ import { Link } from 'react-router-dom';
 import './HomeCards.css'
 import {collection , getDocs , doc ,deleteDoc} from "firebase/firestore"
 import { db } from '../../Firebase/Utilities'
+<<<<<<< Updated upstream
 // import { cardInfo } from './Card_data';
+=======
+import { cardInfo } from './Card_data';
+import { BsSuitHeartFill } from "react-icons/bs"
+>>>>>>> Stashed changes
 
 const HomeCards = () => {
   const [users,setUsers] = useState([]);
@@ -28,6 +33,7 @@ const HomeCards = () => {
       return ( 
         <>
           <div className='card-container'>
+            <button className='card-heart'><BsSuitHeartFill  ></BsSuitHeartFill></button>
             <div className="card-image">
             <img src={user.url} alt="This the book pic"/>
             </div>
