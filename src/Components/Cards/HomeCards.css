@@ -9,6 +9,7 @@
 
 
 .card-container{
+  position: relative;
   background: hsl(27, 100%, 78%);
   border: none;
   width: 300px;
@@ -19,6 +20,7 @@
   animation:ease-in;
   justify-content: center;
   align-items: center;
+  
 }
 .card-container:hover{
 transform:scale(1.03);
@@ -68,6 +70,24 @@ text-align: center;
   cursor: pointer;
   margin-bottom : 20px;
   width: 90%;
+}
+.card-heart {
+  position: absolute;
+  top: 43%;
+  left: 82%;
+  transform: scale(1.6);
+  color: red;
+  background: transparent;
+  border: none;
+  border-radius: 40px ;
+  display: flex;
+  justify-content: end;
+  padding: 0 1rem;
+  z-index: 2;
+  height: 0rem;
+}
+.card-heart svg {
+  height: 1rem;
 }
 
 
