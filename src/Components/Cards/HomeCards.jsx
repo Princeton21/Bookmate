@@ -29,7 +29,9 @@ const HomeCards = () => {
       return ( 
         <>
           <div className='card-container'>
-            <button className='card-heart'><BsSuitHeartFill  ></BsSuitHeartFill></button>
+            <button className='card-heart'>
+            <Link to='./fav'><BsSuitHeartFill/></Link>
+            </button>
             <div className="card-image">
             <img src={user.url} alt="This the book pic"/>
             </div>

@@ -9,7 +9,7 @@ import Home from './Home';
 import Login from './Components/Login/Login';
 import Login1 from './login1/Login1';
 import Signup1 from './login1/Signup1';
-
+import Fav from './Components/Favourites/Fav';
 import { auth } from './Firebase/Utilities';
 import Contact from './Components/Contact us/Contact';
 import NotFound from './Components/404/NotFound';
@@ -56,6 +56,7 @@ class App extends Component {
         <Route exact path ="/sell" element = {<Sell/>} />
         <Route exact path ="/login1" element = {<Login1/>} />
         <Route exact path ="/login1/Signup1" element = {<Signup1/>} />
+        <Route exact path ="/fav" element = {<Fav/>} />
         <Route exact path ="/contact" element = {<Contact/>} />
         <Route exact path = "/Cart" element = {
           <>

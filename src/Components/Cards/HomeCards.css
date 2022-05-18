@@ -89,6 +89,12 @@ text-align: center;
 .card-heart svg {
   height: 1rem;
 }
+.card-heart a{
+  color: hsl(350, 87%, 53%);
+}
+.card-heart svg:hover{
+  transform: scale(1.1);
+}
 
 
 .card-btn button:hover {
