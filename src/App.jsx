@@ -15,6 +15,7 @@ import Contact from './Components/Contact us/Contact';
 import NotFound from './Components/404/NotFound';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import Fav from './Components/Favorites/Fav';
 
 
 
@@ -52,11 +53,11 @@ class App extends Component {
       {/* <Navbar/> */}
       <Routes>
         <Route exact path ="/" element = {<Home user={this.state.user}/>} />
-
         <Route exact path ="/sell" element = {<Sell/>} />
         <Route exact path ="/login1" element = {<Login1/>} />
         <Route exact path ="/login1/Signup1" element = {<Signup1/>} />
         <Route exact path ="/contact" element = {<Contact/>} />
+        <Route exact path ="/fav" element = {<Fav/>} />
         <Route exact path = "/Cart" element = {
           <>
           <Navbar/>
