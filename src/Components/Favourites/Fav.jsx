@@ -1,8 +1,14 @@
 import React from 'react'
-
+import Navbar from '../../Navbar'
+import Footer from '../../Footer'
 const Fav = () => {
   return (
-    <div>This is the favourites Page</div>
+    <>
+      <Navbar/>
+      This is the favourites page!!!
+      <Footer/>
+    </>
+   
   )
 }
 
